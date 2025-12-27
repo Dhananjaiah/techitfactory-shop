@@ -1,0 +1,14 @@
+name: product-ci
+on:
+  pull_request:
+    paths: [ "services/product/**" ]
+  push:
+    branches: [ "main" ]
+    paths: [ "services/product/**" ]
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Sprint-1 placeholder CI. Sprint-1 CI/CD epic will implement build/test/scan/push."
